@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SIMOON AI — Discover AI tools for writing, coding, images, video, and productivity.">
+  <title>SIMOON AI | Explore the Future</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="navbar">
+    <a href="#home" class="logo"><span class="logo-icon">✦</span> SIMOON<span class="logo-ai">AI</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#tools">AI Tools</a><a href="#about">About</a>
+    </nav>
+    <button id="themeToggle" class="theme-button" aria-label="Toggle theme">☀️</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="badge"><span class="status-dot"></span> YOUR PERSONAL AI DISCOVERY HUB</div>
+      <h1>Explore the Future<br>with <span class="gradient-text">SIMOON AI.</span></h1>
+      <p class="hero-description">Discover powerful AI tools to create, learn, code, and do more. Your next big idea starts here.</p>
+      <div class="search-box">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input type="search" id="searchInput" placeholder="Search AI tools, categories..." aria-label="Search AI tools">
+        <button id="searchButton">Explore ↗</button>
+      </div>
+      <div class="quick-tags">
+        <span>Popular:</span>
+        <button class="tag" data-category="Writing">Writing</button>
+        <button class="tag" data-category="Coding">Coding</button>
+        <button class="tag" data-category="Image">Image AI</button>
+        <button class="tag" data-category="Video">Video AI</button>
+      </div>
+      <div class="hero-stats">
+        <div><strong>06</strong><span>Featured Tools</span></div><div class="stat-divider"></div>
+        <div><strong>05</strong><span>Categories</span></div><div class="stat-divider"></div>
+        <div><strong>∞</strong><span>Possibilities</span></div>
+      </div>
+    </section>
+
+    <section class="tools-section" id="tools">
+      <div class="section-heading">
+        <div><span class="section-label">THE COLLECTION</span><h2>Discover <span class="gradient-text">AI Tools.</span></h2><p>Handpicked tools to power your creativity.</p></div>
+        <span class="tool-count" id="toolCount">06 TOOLS</span>
+      </div>
+      <div class="category-filters">
+        <button class="filter-btn active" data-category="All">✦ All Tools</button>
+        <button class="filter-btn" data-category="Writing">✍️ Writing</button>
+        <button class="filter-btn" data-category="Coding">💻 Coding</button>
+        <button class="filter-btn" data-category="Image">🎨 Image</button>
+        <button class="filter-btn" data-category="Video">🎬 Video</button>
+        <button class="filter-btn" data-category="Voice">🎙️ Voice</button>
+      </div>
+
+      <div class="tools-grid" id="toolsGrid">
+        <article class="tool-card" data-category="Writing" data-name="ChatGPT">
+          <div class="card-top"><div class="tool-icon purple">✦</div><span class="card-category">WRITING</span></div>
+          <h3>ChatGPT</h3><p>Write, learn, brainstorm ideas, and solve everyday problems with AI.</p>
+          <div class="card-bottom"><span class="tool-type">AI Assistant</span><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit ↗</a></div>
+        </article>
+        <article class="tool-card" data-category="Coding" data-name="GitHub Copilot">
+          <div class="card-top"><div class="tool-icon green">⌘</div><span class="card-category">CODING</span></div>
+          <h3>GitHub Copilot</h3><p>Get AI-powered coding suggestions and assistance while developing projects.</p>
+          <div class="card-bottom"><span class="tool-type">Coding Assistant</span><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit ↗</a></div>
+        </article>
+        <article class="tool-card" data-category="Image" data-name="Adobe Firefly">
+          <div class="card-top"><div class="tool-icon orange">✧</div><span class="card-category">IMAGE</span></div>
+          <h3>Adobe Firefly</h3><p>Explore AI-assisted image generation and creative visual design.</p>
+          <div class="card-bottom"><span class="tool-type">Image Generator</span><a href="https://firefly.adobe.com/" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit ↗</a></div>
+        </article>
+        <article class="tool-card" data-category="Video" data-name="Runway">
+          <div class="card-top"><div class="tool-icon pink">▶</div><span class="card-category">VIDEO</span></div>
+          <h3>Runway</h3><p>Discover AI-powered tools for video creation and visual storytelling.</p>
+          <div class="card-bottom"><span class="tool-type">Video Creation</span><a href="https://runwayml.com/" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit ↗</a></div>
+        </article>
+        <article class="tool-card" data-category="Voice" data-name="ElevenLabs">
+          <div class="card-top"><div class="tool-icon blue">♫</div><span class="card-category">VOICE</span></div>
+          <h3>ElevenLabs</h3><p>Explore AI voice generation and text-to-speech tools.</p>
+          <div class="card-bottom"><span class="tool-type">Voice AI</span><a href="https://elevenlabs.io/" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit ↗</a></div>
+        </article>
+        <article class="tool-card" data-category="Writing" data-name="Grammarly">
+          <div class="card-top"><div class="tool-icon cyan">Aa</div><span class="card-category">WRITING</span></div>
+          <h3>Grammarly</h3><p>Improve grammar, clarity, tone, and communication in your writing.</p>
+          <div class="card-bottom"><span class="tool-type">Writing Assistant</span><a href="https://www.grammarly.com/" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit ↗</a></div>
+        </article>
+      </div>
+      <div id="emptyMessage" class="empty-message" hidden><span>⌕</span><h3>No tools found</h3><p>Try another search or choose a different category.</p><button id="resetButton" class="reset-btn">Show all tools</button></div>
+    </section>
+
+    <section class="cta-section" id="about">
+      <div class="cta-orb">✦</div><span class="section-label">BUILT FOR CURIOUS MINDS</span>
+      <h2>Your ideas deserve<br><span class="gradient-text">powerful tools.</span></h2>
+      <p>Start exploring AI and discover new ways to turn your ideas into reality.</p>
+      <a href="#tools" class="cta-button">Explore AI Tools ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="footer-logo">✦ SIMOON<span class="logo-ai">AI</span></a>
+    <p>Designed with curiosity by <strong>Simoon Hasan</strong>.</p>
+    <span class="copyright">© <span id="year"></span> SIMOON AI</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
